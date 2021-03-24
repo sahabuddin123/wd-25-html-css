@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			background: #ff0000;
+		}
+		.main{
+			display: flex;
+		}
+		.child{
+			height: 500px;
+			width: 400px;
+			border: 2px solid #000;
+			margin: 20px;
+			transition: 2s ease-in;
+			padding: 10px;
+			overflow: hidden;
+		}
+		.child:first-child:hover{
+			background: #ffff00;
+			transform: scale(1.1);
+			transition: 2s ease-in;
+			box-shadow: 8px 12px 20px #000;
+		}
+		.child:nth-child(2):hover{
+			background: #00ffff ;
+			transform: scale(1.1) rotate(90deg);
+			transition: 2s ease-in;
+			box-shadow: 8px 12px 20px #000;
+		}
+		.child:nth-child(3):hover{
+			background: #c7e4cd;
+			transform: translate(-200px,100px) scale(.5);
+			transition: 2s ease-in;
+			box-shadow: 8px 12px 20px #000;
+		}
+		@media only screen and (max-width: 1200px) {
+			body{
+				background: #00ffff;
+			}
+		}
+		@media only screen and (max-width: 992px) {
+			body{
+				background: #ff00ff;
+			}
+			.child{
+				background: #000;
+				border-color: #fff;
+			}
+		}
+		@media only screen and (max-width: 768px) {
+			body{
+				background: #0000ff;
+			}
+			.child{
+				height: 300px;
+				width: 300px;
+				background: #c7c7c7;
+			}
+		}
+		@media only screen and (max-width: 576px) {
+			body{
+				background: #00ff00;
+			}
+			.main{
+				display: block;
+			}
+			.child{
+				background: #ff4f81;
+			}
+		}
+		@media print{
+			body{
+				background: #fff;
+				color: #000;
+				font-size: 18px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="child">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, atque provident sunt cupiditate deserunt illo repudiandae fuga. Earum velit quia nobis accusamus delectus dignissimos alias suscipit sed rerum corporis! Sit laudantium, pariatur, voluptas quod possimus consequatur in! Sed neque officia ipsam deserunt, vitae eos nostrum, odio qui, libero asperiores, sint in placeat dignissimos enim ipsum itaque tenetur accusantium ea! Amet, tempore! Sunt adipisci libero tempore aperiam perferendis minus corrupti harum vero consequuntur, itaque saepe, est, suscipit, neque cupiditate quae mollitia tempora. Optio quas, eveniet maxime laudantium, magni velit rem officia voluptates eos illum soluta, dolorem nesciunt quod ex necessitatibus odio?
+		</div>
+		<div class="child">
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis corporis quibusdam unde alias error nihil ducimus voluptates magni atque? Voluptatibus consequatur dolor ullam praesentium repellendus eos, inventore ex earum aut dolores recusandae nam hic iusto expedita laborum dicta tempore at fugit, similique optio in possimus, culpa! Ullam, similique. Officiis labore ea id voluptate magnam, dicta aliquid repellat dolor ipsum impedit similique, sapiente laudantium reiciendis nisi magni error pariatur. Quidem provident tempore repellat beatae deleniti consectetur eum excepturi repellendus incidunt eos saepe impedit dolore, pariatur. Fugiat eius exercitationem qui quis nostrum saepe optio, atque eos repudiandae numquam tempora porro quae voluptas.
+		</div>
+		<div class="child">
+			Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Deserunt minus quidem blanditiis laudantium consequuntur ipsum dolores voluptatem sed dolorum mollitia eligendi soluta, saepe nihil rerum accusamus magnam nostrum ullam quas similique quibusdam id. Aliquid fuga expedita illo temporibus iusto rerum veniam, ab esse, ex quod, asperiores quaerat explicabo accusantium, repellat beatae ratione. Odio debitis sapiente, eos accusamus minus voluptatibus tenetur dolorem quas. Impedit perspiciatis officiis tempore labore dolorem, fugiat, delectus deleniti minus voluptate magni veniam iste, ducimus cumque molestias corrupti sint cum modi quidem quia provident id, amet sequi! Recusandae, ratione consectetur doloremque rerum molestias exercitationem quaerat qui similique provident.
+		</div>
+	</div>
+</body>
+</html>
